@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown</title>
+</head>
+    <h1>Dropdown list example</h1>
+    <label>select courses</label>
+    <select id="options">
+        <option value="" selected disabled hidden></option>
+        <option value="CSE">CSE</option>
+        <option value="MECH">MECH</option>
+        <option value="IT">IT</option>
+        <option value="EEE">EEE</option>
+    </select>
+    <script>
+        var select = document.getElementById("options");
+        select.addEventListener("change",function(){
+            var option = select.value;
+            alert("you selected : "+option)
+        })
+    </script>
+</body>
+</html>
